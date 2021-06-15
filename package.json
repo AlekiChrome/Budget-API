@@ -1,0 +1,34 @@
+{
+  "name": "budget-api",
+  "version": "1.0.0",
+  "description": "Full-Stack budget app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlekiChrome/Budget-API.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "budget",
+    "budgetting"
+  ],
+  "author": "Candice Agard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlekiChrome/Budget-API/issues"
+  },
+  "homepage": "https://github.com/AlekiChrome/Budget-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.15.3"
+  }
+
+}
