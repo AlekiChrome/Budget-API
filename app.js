@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const transactionsController = require("./controllers/transactionsController");
 
 // middleware
 app.use(cors());
@@ -18,6 +19,8 @@ app.get("/", (req, res) => {
   });
 
 // app.use("/budgets", budgetController);
+
+app.use("/transactions", transactionsController);
 
 app.get("*", (req, res) => {
     res.status(404).send("Page not found.");

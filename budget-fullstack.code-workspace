@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "budget-app-fe",
+			"path": "../budget-app-fe"
 		},
 		{
-			"path": "../budget-app-fe"
+			"name": "Budget-API",
+			"path": "."
 		}
 	],
 	"settings": {}
