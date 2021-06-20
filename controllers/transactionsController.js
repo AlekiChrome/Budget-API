@@ -49,7 +49,7 @@ transactions.put("/:id", (req, res) => {
 });
 
 transactions.delete("/:id", (req, res) => {
-    const { index } = req.params;
+    const { id } = req.params;
     if (transactionsArray[id]) {
         const deleted = transactionsArray.splice(id, 1)
         res.json(deleted[0])

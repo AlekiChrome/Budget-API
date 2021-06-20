@@ -23,7 +23,10 @@ app.get("/", (req, res) => {
 app.use("/transactions", transactionsController);
 
 app.get("*", (req, res) => {
-    res.status(404).send("Page not found.");
+    res.status(404).send(`
+        <h1>404 Page Not Found</h1>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fagentestudio.com%2Fuploads%2Fpost%2Fimage%2F69%2Fmain_how_to_design_404_page.png&f=1&nofb=1">
+    `);
 });
 
 module.exports = app;
