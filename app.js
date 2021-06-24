@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Routes
 app.use((req, res, next) => {
-    console.log(`[development] Middleware is running!`);
+    console.log(`[development] Middleware is running!  ${req.method} ${req.url}`);
     next();
 });
 

@@ -40,13 +40,14 @@ transactions.post("/", (req, res) => {
 
 transactions.put("/:id", (req, res) => {
     const { id } = req.params;
+    console.log(req.body)
     if (transactionsArray[id]) {
-        transctionsArray[id] = req.body;
+        transactionsArray[id] = req.body;
         res.json(transactionsArray[id])
     } else {
         res.redirect("/404")
     }
-});
+}); 
 
 transactions.delete("/:id", (req, res) => {
     const { id } = req.params;
